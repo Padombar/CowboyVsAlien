@@ -5,8 +5,7 @@ using UnityEngine.UI;
 public class ControlSettings : MonoBehaviour {
 	GameObject controls;
 
-	void Start () {
-		
+	void Start () {		
 		controls = GameObject.FindGameObjectWithTag("Controls");
 		controls.SetActive (false);
 	}
@@ -27,16 +26,25 @@ public class ControlSettings : MonoBehaviour {
 		Dropdown left = GameObject.Find("Left").GetComponent<Dropdown>();
 		Dropdown right = GameObject.Find("Right").GetComponent<Dropdown>();
 		Dropdown shoot = GameObject.Find("Shoot").GetComponent<Dropdown>();
+		Dropdown use = GameObject.Find ("Use").GetComponent<Dropdown> ();
 		Dropdown menu = GameObject.Find("MenuDD").GetComponent<Dropdown>();
 
-		// Benutzen einfügen e oder f
 
 		int forwardKey = forward.value;
 		int backwardKey = backward.value;
 		int leftKey = left.value;
 		int rightKey = right.value;
 		int shootKey = shoot.value;
+		int useKey = use.value;
 		int menuKey = menu.value;
+
+
+
+//		if (forwardKey == 0) {
+//			PlayerPrefs.SetString( "control_forward", "W");		
+//		} else if (forwardKey == 1) {
+//			PlayerPrefs.SetString( "control_forward", "MouseUp");
+//		}
 
 //		PlayerPrefs.SetInt( "control_forward", forwardKey);
 //		PlayerPrefs.SetInt("control_backward", backwardKey);
