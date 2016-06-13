@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class InGameMenu : MonoBehaviour {
 
@@ -16,15 +17,10 @@ public class InGameMenu : MonoBehaviour {
 	void Awake () {
 		butRect = new Rect ((Screen.width - ctrlWidth) / 2, -Screen.height - (((4*ctrlHeight)+(4*20))/2), ctrlWidth, ctrlHeight);
 	}
-
-	// Use this for initialization
-	void Start () {
-
-	}
-
+		
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Escape)) {			// Keycode auslesen aus den PlayerPrefs
+		if(Input.GetKeyDown (PlayerPrefs.GetString ("control_menu"))) {
 			ToggleTimeScale();
 		}
 	}

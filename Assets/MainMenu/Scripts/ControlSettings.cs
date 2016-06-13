@@ -21,13 +21,13 @@ public class ControlSettings : MonoBehaviour {
 	}
 
 	public void SaveSettingsButton() {
-		Dropdown forward = GameObject.Find("Forward").GetComponent<Dropdown>();
-		Dropdown backward = GameObject.Find("Backward").GetComponent<Dropdown>();
-		Dropdown left = GameObject.Find("Left").GetComponent<Dropdown>();
-		Dropdown right = GameObject.Find("Right").GetComponent<Dropdown>();
-		Dropdown shoot = GameObject.Find("Shoot").GetComponent<Dropdown>();
-		Dropdown use = GameObject.Find ("Use").GetComponent<Dropdown> ();
-		Dropdown menu = GameObject.Find("MenuDD").GetComponent<Dropdown>();
+		Dropdown forward = GameObject.FindGameObjectWithTag("Forward").GetComponent<Dropdown>();
+		Dropdown backward = GameObject.FindGameObjectWithTag("Backward").GetComponent<Dropdown>();
+		Dropdown left = GameObject.FindGameObjectWithTag("Left").GetComponent<Dropdown>();
+		Dropdown right = GameObject.FindGameObjectWithTag("Right").GetComponent<Dropdown>();
+		Dropdown shoot = GameObject.FindGameObjectWithTag("Shoot").GetComponent<Dropdown>();
+		Dropdown use = GameObject.FindGameObjectWithTag ("Use").GetComponent<Dropdown> ();
+		Dropdown menu = GameObject.FindGameObjectWithTag("Menu").GetComponent<Dropdown>();
 
 
 		int forwardKey = forward.value;
@@ -39,19 +39,46 @@ public class ControlSettings : MonoBehaviour {
 		int menuKey = menu.value;
 
 
+		if (forwardKey == 0) {
+			PlayerPrefs.SetString( "control_forward", "w");		
+		} else if (forwardKey == 1) {
+			PlayerPrefs.SetString( "control_forward", "up");
+		}
 
-//		if (forwardKey == 0) {
-//			PlayerPrefs.SetString( "control_forward", "W");		
-//		} else if (forwardKey == 1) {
-//			PlayerPrefs.SetString( "control_forward", "MouseUp");
-//		}
+		if (backwardKey == 0) {
+			PlayerPrefs.SetString( "control_backward", "s");		
+		} else if (backwardKey == 1) {
+			PlayerPrefs.SetString( "control_backward", "down");
+		}	
 
-//		PlayerPrefs.SetInt( "control_forward", forwardKey);
-//		PlayerPrefs.SetInt("control_backward", backwardKey);
-//		PlayerPrefs.SetInt("control_left", leftKey);
-//		PlayerPrefs.SetInt("control_right", rightKey);
-//		PlayerPrefs.SetInt("control_shoot", shootKey);
-//		PlayerPrefs.SetInt("control_menu", menuKey);
+		if (leftKey == 0) {
+			PlayerPrefs.SetString( "control_left", "a");		
+		} else if (leftKey == 1) {
+			PlayerPrefs.SetString( "control_left", "left");
+		}	
 
+		if (rightKey == 0) {
+			PlayerPrefs.SetString( "control_right", "d");		
+		} else if (rightKey == 1) {
+			PlayerPrefs.SetString( "control_right", "right");
+		}	
+
+		if (shootKey == 0) {
+			PlayerPrefs.SetString( "control_shoot", "mouse0");		
+		} else if (shootKey == 1) {
+			PlayerPrefs.SetString( "control_shoot", "space");
+		}
+
+		if (useKey == 0) {
+			PlayerPrefs.SetString( "control_use", "e");		
+		} else if (useKey == 1) {
+			PlayerPrefs.SetString( "control_use", "f");
+		}
+
+		if (menuKey == 0) {
+			PlayerPrefs.SetString( "control_menu", "escape");		
+		} else if (menuKey == 1) {
+			PlayerPrefs.SetString( "control_menu", "p");
+		}
 	}
 }
