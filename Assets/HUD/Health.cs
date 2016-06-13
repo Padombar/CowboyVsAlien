@@ -9,6 +9,7 @@ public class Health : MonoBehaviour {
 //	private Color MinHealthColor = Color.red;
 	public Image Fill;
 	GameObject gameOver;
+	GameObject gameWon;
 	public float waitXsecondsToGoBackToGame = 5.0f;
 
 
@@ -17,6 +18,8 @@ public class Health : MonoBehaviour {
 	void Start () {
 		gameOver = GameObject.FindGameObjectWithTag ("GameOver");
 		gameOver.SetActive (false);
+	    gameWon = GameObject.FindGameObjectWithTag("GameWon");
+        gameWon.SetActive(false);
 
 		slider = GameObject.Find("HealthSlider").GetComponent<Slider>();
 		slider.minValue = 0f;
