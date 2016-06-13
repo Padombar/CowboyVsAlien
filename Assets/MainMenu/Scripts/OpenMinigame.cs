@@ -9,6 +9,6 @@ public class OpenMinigame : MonoBehaviour {
 
 	public void StartGameScene() {
 		PlayerPrefs.SetInt ("playerHealth", 100);
-		UnityEngine.SceneManagement.SceneManager.LoadScene (2);
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("Minigame");
 	}
 }

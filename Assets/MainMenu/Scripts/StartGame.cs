@@ -10,6 +10,6 @@ public class StartGame : MonoBehaviour {
 
 	public void StartGameScene() {		
 		// Change value to game index
-		UnityEngine.SceneManagement.SceneManager.LoadScene (2);		
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("Game");		
 	}
 }

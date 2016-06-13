@@ -43,7 +43,7 @@ public class Minigame : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		UnityEngine.SceneManagement.SceneManager.LoadScene (3, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("HUD", UnityEngine.SceneManagement.LoadSceneMode.Additive);
 
 //		PlayerPrefs.SetInt ("aliensKilled", 0);
 //		PlayerPrefs.SetInt ("strikes", 0);
@@ -248,7 +248,7 @@ public class Minigame : MonoBehaviour {
 	}
 
 	void JumpBackToGame () {
-		UnityEngine.SceneManagement.SceneManager.LoadScene (0);
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("MainMenu");
 	}
 
 }

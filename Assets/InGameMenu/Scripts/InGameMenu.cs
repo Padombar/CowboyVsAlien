@@ -48,7 +48,7 @@ public class InGameMenu : MonoBehaviour {
 			}
 			butRect.y += ctrlHeight + 20;
 			if (GUI.Button (butRect, "Main Menu")) {
-				UnityEngine.SceneManagement.SceneManager.LoadScene (0);
+				UnityEngine.SceneManagement.SceneManager.LoadScene ("MainMenu");
 			}
 
 			butRect.y += ctrlHeight + 20;
@@ -56,7 +56,7 @@ public class InGameMenu : MonoBehaviour {
 				Debug.Log ("Settings clicked");
 				
 				PlayerPrefs.SetInt( "previousLevel", Application.loadedLevel);
-				UnityEngine.SceneManagement.SceneManager.LoadScene (1);
+				UnityEngine.SceneManagement.SceneManager.LoadScene ("InGameSettings");
 			}
 
 			butRect.y += ctrlHeight + 20;
