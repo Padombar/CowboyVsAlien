@@ -51,7 +51,7 @@ public class InGameMenu : MonoBehaviour {
 			if (GUI.Button (butRect, "Settings")) {
 				Debug.Log ("Settings clicked");
 				
-				PlayerPrefs.SetInt( "previousLevel", Application.loadedLevel);
+				PlayerPrefs.SetInt( "previousLevel", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
 				UnityEngine.SceneManagement.SceneManager.LoadScene ("InGameSettings");
 			}
 
