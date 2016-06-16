@@ -49,10 +49,13 @@ public class InGameMenu : MonoBehaviour {
 
 			butRect.y += ctrlHeight + 20;
 			if (GUI.Button (butRect, "Settings")) {
-				Debug.Log ("Settings clicked");
-				
-				PlayerPrefs.SetInt( "previousLevel", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
-				UnityEngine.SceneManagement.SceneManager.LoadScene ("InGameSettings");
+                GameObject masterObject = GameObject.Find("MasterObject");
+                for (int i = 0; i < masterObject.transform.childCount; i++)
+                {
+                    masterObject.transform.GetChild(i).gameObject.SetActive(false);
+                }
+                DontDestroyOnLoad(masterObject);
+                UnityEngine.SceneManagement.SceneManager.LoadScene ("InGameSettings");
 			}
 
 			butRect.y += ctrlHeight + 20;

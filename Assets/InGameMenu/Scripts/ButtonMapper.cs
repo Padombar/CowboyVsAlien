@@ -10,10 +10,8 @@ public class ButtonMapper : MonoBehaviour {
 	}
 
 	public void Continue() {
-		// From Settings back to menu
-		int previousLevel = PlayerPrefs.GetInt( "previousLevel" );
-		PlayerPrefs.SetInt( "previousLevel", 0);
-		Time.timeScale = 1;
-		SceneManager.LoadScene (previousLevel);
-	}
+        PlayerPrefs.SetInt("reload", 1);
+        SceneManager.LoadScene("GameReloadScene");
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("GameReloadScene"));
+    }
 }

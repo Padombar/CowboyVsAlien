@@ -74,5 +74,6 @@ public class Health : MonoBehaviour {
 	void JumpToStartMenu () {
 		PlayerPrefs.SetInt ("playerHealth", 100);
 		UnityEngine.SceneManagement.SceneManager.LoadScene ("MainMenu");
+        Destroy(GameObject.Find("MasterObject"));
 	}
 }

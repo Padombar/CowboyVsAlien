@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Minigame : MonoBehaviour {
 	GameObject[] alienArray = new GameObject[9];
@@ -201,8 +202,8 @@ public class Minigame : MonoBehaviour {
 				wonText.SetActive (true);
 				// game gewonnen = 1 game verloren = 0
 				PlayerPrefs.SetInt("gameWon", 1);
-
-			}
+                executeWait();
+            }
 		}
 	}
 
@@ -247,8 +248,11 @@ public class Minigame : MonoBehaviour {
 		JumpBackToGame ();
 	}
 
-	void JumpBackToGame () {
-		UnityEngine.SceneManagement.SceneManager.LoadScene ("MainMenu");
+	void JumpBackToGame ()
+	{
+        PlayerPrefs.SetInt("reload",1);
+	    SceneManager.LoadScene("GameReloadScene");
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("GameReloadScene"));
 	}
 
 }
