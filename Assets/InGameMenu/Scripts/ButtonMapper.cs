@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ButtonMapper : MonoBehaviour {
 
@@ -13,6 +14,6 @@ public class ButtonMapper : MonoBehaviour {
 		int previousLevel = PlayerPrefs.GetInt( "previousLevel" );
 		PlayerPrefs.SetInt( "previousLevel", 0);
 		Time.timeScale = 1;
-		Application.LoadLevel( previousLevel );
+		SceneManager.LoadScene (previousLevel);
 	}
 }
