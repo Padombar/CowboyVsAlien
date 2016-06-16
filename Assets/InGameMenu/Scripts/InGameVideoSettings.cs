@@ -12,6 +12,9 @@ public class InGameVideoSettings : MonoBehaviour {
 
 	void Start() {
 		float newYCoordinate = 3.9616f;
+		maximum += constantValue;
+		minimum += constantValue;
+
 		names = QualitySettings.names;
 		range = maximum - minimum;
 		levelRange = range / 5;
