@@ -54,7 +54,8 @@ public class EndGame : MonoBehaviour {
         if (collider.CompareTag("Player"))
         {
             isInEndgameRange = true;
-            gameText.text += _text;
+            if (!gameText.text.Contains(_text))
+                gameText.text += _text;
         }
     }
 

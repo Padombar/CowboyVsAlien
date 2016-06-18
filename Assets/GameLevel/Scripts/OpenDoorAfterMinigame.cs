@@ -83,7 +83,8 @@ public class OpenDoorAfterMinigame : MonoBehaviour
         {
             if (!gameText.text.Contains(doorText))
             {
-                gameText.text += doorText;
+                if (!gameText.text.Contains(doorText))
+                    gameText.text += doorText;
             }
 
             timer.Stop();

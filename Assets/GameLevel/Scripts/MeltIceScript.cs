@@ -59,7 +59,8 @@ public class MeltIceScript : MonoBehaviour
         if (collider.CompareTag("Player") && PlayerPrefs.GetInt("jollyFree", 0) == 0)
         {
             isInMeltRange = true;
-            gameText.text += _text;
+            if (!gameText.text.Contains(_text))
+                gameText.text += _text;
         }
     }
 
