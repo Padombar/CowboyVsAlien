@@ -29,8 +29,20 @@ public class Player : MonoBehaviour {
 
 			mycontroller = (CharacterController)gameObject.GetComponent ("CharacterController");
 
-			float z = Input.GetAxis ("Vertical");
-			float x = Input.GetAxis ("Horizontal");
+		    bool forward = Input.GetKey(PlayerPrefs.GetString("control_forward", "w"));
+            bool backward = Input.GetKey(PlayerPrefs.GetString("control_backward", "s"));
+            bool left = Input.GetKey(PlayerPrefs.GetString("control_left", "a"));
+            bool right = Input.GetKey(PlayerPrefs.GetString("control_right", "d"));
+            bool shootKey = Input.GetKey(PlayerPrefs.GetString("control_shoot", "Fire1"));
+
+		    float x = left ? -1 : 0;
+		    x = right ? 1 : 0;
+		    x = left && right ? 0 : x;
+
+            float z = backward ? -1 : 0;
+            z = forward ? 1 : 0;
+            z = forward && backward ? 0 : x;
+            
 			mycontroller.SimpleMove (transform.forward * z * moveSpeed * Time.deltaTime);
 			mycontroller.SimpleMove (transform.right * x * moveSpeed * Time.deltaTime);
 			if ((z > 0.2) || (z < -0.2)) {
@@ -40,11 +52,11 @@ public class Player : MonoBehaviour {
 			}
 
 
-			if (Input.GetMouseButtonDown (0)) {
+			if (shootKey) {
 				if (!shooting) {
 					shooting = true;
 					myanimation.CrossFade ("ActionShoot");
-					StartCoroutine (shoot ());
+					StartCoroutine (shoot());
 					shooting = false;
 				}
 			}

@@ -64,7 +64,7 @@ public class ControlSettings : MonoBehaviour {
 		}	
 
 		if (shootKey == 0) {
-			PlayerPrefs.SetString( "control_shoot", "mouse0");		
+			PlayerPrefs.SetString( "control_shoot", "Fire1");		
 		} else if (shootKey == 1) {
 			PlayerPrefs.SetString( "control_shoot", "space");
 		}

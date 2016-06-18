@@ -9,7 +9,7 @@ public class SetControlsOnStartup : MonoBehaviour {
 		PlayerPrefs.SetString( "control_backward", "s");
 		PlayerPrefs.SetString( "control_left", "a");	
 		PlayerPrefs.SetString( "control_right", "d");
-		PlayerPrefs.SetString( "control_shoot", "mouse0");	
+		PlayerPrefs.SetString( "control_shoot", "Fire1");	
 		PlayerPrefs.SetString( "control_use", "e");	
 		PlayerPrefs.SetString( "control_menu", "escape");
 	}

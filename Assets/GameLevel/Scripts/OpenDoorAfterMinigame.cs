@@ -77,9 +77,9 @@ public class OpenDoorAfterMinigame : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collider)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
             if (!gameText.text.Contains(doorText))
             {
