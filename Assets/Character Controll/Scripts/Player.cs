@@ -41,7 +41,7 @@ public class Player : MonoBehaviour {
 			}
 
 
-			if (shootKey) {
+			if (Input.GetMouseButtonDown(0)) {
 				if (!shooting) {
 					shooting = true;
 					myanimation.CrossFade ("ActionShoot");
