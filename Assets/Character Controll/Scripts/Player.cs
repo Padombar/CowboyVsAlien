@@ -29,21 +29,10 @@ public class Player : MonoBehaviour {
 
 			mycontroller = (CharacterController)gameObject.GetComponent ("CharacterController");
 
-		    bool forward = Input.GetKey(PlayerPrefs.GetString("control_forward", "w"));
-            bool backward = Input.GetKey(PlayerPrefs.GetString("control_backward", "s"));
-            bool left = Input.GetKey(PlayerPrefs.GetString("control_left", "a"));
-            bool right = Input.GetKey(PlayerPrefs.GetString("control_right", "d"));
-            bool shootKey = Input.GetKey(PlayerPrefs.GetString("control_shoot", "Fire1"));
+            float z = Input.GetAxis("Vertical");
+            float x = Input.GetAxis("Horizontal");
 
-		    float x = left ? -1 : 0;
-		    x = right ? 1 : 0;
-		    x = left && right ? 0 : x;
-
-            float z = backward ? -1 : 0;
-            z = forward ? 1 : 0;
-            z = forward && backward ? 0 : x;
-            
-			mycontroller.SimpleMove (transform.forward * z * moveSpeed * Time.deltaTime);
+            mycontroller.SimpleMove (transform.forward * z * moveSpeed * Time.deltaTime);
 			mycontroller.SimpleMove (transform.right * x * moveSpeed * Time.deltaTime);
 			if ((z > 0.2) || (z < -0.2)) {
 				myanimation.CrossFade ("ActionWalking");
