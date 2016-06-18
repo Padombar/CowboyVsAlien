@@ -65,7 +65,6 @@ public class InGameMenu : MonoBehaviour {
 
 			butRect.y += ctrlHeight + 20;
 			if (GUI.Button (butRect, "Exit")) {
-				ToggleTimeScale ();
 				Application.Quit();
 			}		
 		}
