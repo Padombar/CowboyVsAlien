@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: a649702810d30e14eae2192c6aaaa6bb
+timeCreated: 1465227101
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Batteriehalterung
+    100004: Beine
+    100006: Camera
+    100008: Computer
+    100010: ComputerHalterung
+    100012: Energieleitung
+    100014: "Geh\xE4use_Low"
+    100016: Glassscheiben.001
+    100018: Heizblock_Klein_Low
+    100020: Heizblock_Low
+    100022: Heizblockhalter
+    100024: Heizstab_Low
+    100026: Heizstrahler
+    100028: Point
+    100030: Point.001
+    100032: Point.002
+    100034: "Schl\xE4ucheLow"
+    100036: Sun
+    100038: "W\xE4rme\xFCbertr\xE4ger"
+    100040: "W\xE4rme\xFCbertr\xE4gerschl\xE4uche"
+    400000: //RootNode
+    400002: Batteriehalterung
+    400004: Beine
+    400006: Camera
+    400008: Computer
+    400010: ComputerHalterung
+    400012: Energieleitung
+    400014: "Geh\xE4use_Low"
+    400016: Glassscheiben.001
+    400018: Heizblock_Klein_Low
+    400020: Heizblock_Low
+    400022: Heizblockhalter
+    400024: Heizstab_Low
+    400026: Heizstrahler
+    400028: Point
+    400030: Point.001
+    400032: Point.002
+    400034: "Schl\xE4ucheLow"
+    400036: Sun
+    400038: "W\xE4rme\xFCbertr\xE4ger"
+    400040: "W\xE4rme\xFCbertr\xE4gerschl\xE4uche"
+    2300000: Batteriehalterung
+    2300002: Beine
+    2300004: Computer
+    2300006: ComputerHalterung
+    2300008: Energieleitung
+    2300010: "Geh\xE4use_Low"
+    2300012: Glassscheiben.001
+    2300014: Heizblock_Klein_Low
+    2300016: Heizblock_Low
+    2300018: Heizblockhalter
+    2300020: Heizstab_Low
+    2300022: Heizstrahler
+    2300024: "Schl\xE4ucheLow"
+    2300026: "W\xE4rme\xFCbertr\xE4ger"
+    2300028: "W\xE4rme\xFCbertr\xE4gerschl\xE4uche"
+    3300000: Batteriehalterung
+    3300002: Beine
+    3300004: Computer
+    3300006: ComputerHalterung
+    3300008: Energieleitung
+    3300010: "Geh\xE4use_Low"
+    3300012: Glassscheiben.001
+    3300014: Heizblock_Klein_Low
+    3300016: Heizblock_Low
+    3300018: Heizblockhalter
+    3300020: Heizstab_Low
+    3300022: Heizstrahler
+    3300024: "Schl\xE4ucheLow"
+    3300026: "W\xE4rme\xFCbertr\xE4ger"
+    3300028: "W\xE4rme\xFCbertr\xE4gerschl\xE4uche"
+    4300000: Energieleitung
+    4300002: Batteriehalterung
+    4300004: Heizstab_Low
+    4300006: Heizblock_Klein_Low
+    4300008: Heizblock_Low
+    4300010: "W\xE4rme\xFCbertr\xE4gerschl\xE4uche"
+    4300012: ComputerHalterung
+    4300014: Computer
+    4300016: "W\xE4rme\xFCbertr\xE4ger"
+    4300018: Heizstrahler
+    4300020: Beine
+    4300022: "Schl\xE4ucheLow"
+    4300024: "Geh\xE4use_Low"
+    4300026: Heizblockhalter
+    4300028: Glassscheiben.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

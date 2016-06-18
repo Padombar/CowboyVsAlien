@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Timers;
 
 public class Health : MonoBehaviour {
 	private Slider slider;
@@ -13,8 +14,7 @@ public class Health : MonoBehaviour {
 	public float waitXsecondsToGoBackToGame = 5.0f;
 
 
-
-	// Use this for initialization
+    // Use this for initialization
 	void Start () {
 		gameOver = GameObject.FindGameObjectWithTag ("GameOver");
 		gameOver.SetActive (false);
@@ -53,8 +53,9 @@ public class Health : MonoBehaviour {
 //		Fill.color = Color.Lerp(MinHealthColor, MaxHealthColor, (float)PlayerPrefs.GetInt ("playerHealth") / 100f);
 	}
 
-	void Dead() {
-		Debug.Log ("DEAD");
+	void Dead()
+	{
+	    Time.timeScale = 0;
 		gameOver.SetActive (true);
 		executeWait ();
 
@@ -76,4 +77,13 @@ public class Health : MonoBehaviour {
 		UnityEngine.SceneManagement.SceneManager.LoadScene ("MainMenu");
         Destroy(GameObject.Find("MasterObject"));
 	}
+
+    public void GameWon()
+    {
+        PlayerPrefs.SetInt("controllDeactive", 1);
+        GameObject.Find("Hintergrundmusik").GetComponent<AudioSource>().Stop();
+        GameObject.Find("EndMusik").GetComponent<AudioSource>().Play();
+        gameWon.SetActive(true);
+        StartCoroutine(Wait(13f));
+    }
 }

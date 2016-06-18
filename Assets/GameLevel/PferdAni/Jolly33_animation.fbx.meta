@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: 3b5132b4d7cc5294ab9edd6b181f3419
+timeCreated: 1466248256
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: chest
+    100004: FH.L
+    100006: FH.L_end
+    100008: FH.R
+    100010: FH.R_end
+    100012: forearm.L
+    100014: forearm.L_end
+    100016: forearm.R
+    100018: forearm.R_end
+    100020: FV.L
+    100022: FV.L_end
+    100024: FV.R
+    100026: FV.R_end
+    100028: head
+    100030: head_end
+    100032: hip
+    100034: hipsBack.L
+    100036: hipsBack.R
+    100038: //RootNode
+    100040: Kopf
+    100042: Kopf_end
+    100044: master
+    100046: neck
+    100048: Pferd
+    100050: Schwanz
+    100052: schwanz1
+    100054: schwanz2
+    100056: schwanz3
+    100058: schwanz4
+    100060: schwanz4_end
+    100062: Schwanz_end
+    100064: shin.L
+    100066: shin.L_end
+    100068: shin.R
+    100070: shin.R_end
+    100072: shoulder.L
+    100074: shoulder.R
+    100076: spine
+    100078: thigh.L
+    100080: thigh.R
+    100082: upper_arm.L
+    100084: upper_arm.R
+    400000: Armature
+    400002: chest
+    400004: FH.L
+    400006: FH.L_end
+    400008: FH.R
+    400010: FH.R_end
+    400012: forearm.L
+    400014: forearm.L_end
+    400016: forearm.R
+    400018: forearm.R_end
+    400020: FV.L
+    400022: FV.L_end
+    400024: FV.R
+    400026: FV.R_end
+    400028: head
+    400030: head_end
+    400032: hip
+    400034: hipsBack.L
+    400036: hipsBack.R
+    400038: //RootNode
+    400040: Kopf
+    400042: Kopf_end
+    400044: master
+    400046: neck
+    400048: Pferd
+    400050: Schwanz
+    400052: schwanz1
+    400054: schwanz2
+    400056: schwanz3
+    400058: schwanz4
+    400060: schwanz4_end
+    400062: Schwanz_end
+    400064: shin.L
+    400066: shin.L_end
+    400068: shin.R
+    400070: shin.R_end
+    400072: shoulder.L
+    400074: shoulder.R
+    400076: spine
+    400078: thigh.L
+    400080: thigh.R
+    400082: upper_arm.L
+    400084: upper_arm.R
+    4300000: Pferd
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Pferd
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/FH.L
+        weight: 1
+      - path: Armature/master/FH.L/FH.L_end
+        weight: 1
+      - path: Armature/master/FH.R
+        weight: 1
+      - path: Armature/master/FH.R/FH.R_end
+        weight: 1
+      - path: Armature/master/FV.L
+        weight: 1
+      - path: Armature/master/FV.L/FV.L_end
+        weight: 1
+      - path: Armature/master/FV.R
+        weight: 1
+      - path: Armature/master/FV.R/FV.R_end
+        weight: 1
+      - path: Armature/master/hip
+        weight: 1
+      - path: Armature/master/hip/hipsBack.L
+        weight: 1
+      - path: Armature/master/hip/hipsBack.L/thigh.L
+        weight: 1
+      - path: Armature/master/hip/hipsBack.L/thigh.L/shin.L
+        weight: 1
+      - path: Armature/master/hip/hipsBack.L/thigh.L/shin.L/shin.L_end
+        weight: 1
+      - path: Armature/master/hip/hipsBack.R
+        weight: 1
+      - path: Armature/master/hip/hipsBack.R/thigh.R
+        weight: 1
+      - path: Armature/master/hip/hipsBack.R/thigh.R/shin.R
+        weight: 1
+      - path: Armature/master/hip/hipsBack.R/thigh.R/shin.R/shin.R_end
+        weight: 1
+      - path: Armature/master/hip/schwanz1
+        weight: 1
+      - path: Armature/master/hip/schwanz1/schwanz2
+        weight: 1
+      - path: Armature/master/hip/schwanz1/schwanz2/schwanz3
+        weight: 1
+      - path: Armature/master/hip/schwanz1/schwanz2/schwanz3/schwanz4
+        weight: 1
+      - path: Armature/master/hip/schwanz1/schwanz2/schwanz3/schwanz4/schwanz4_end
+        weight: 1
+      - path: Armature/master/hip/spine
+        weight: 1
+      - path: Armature/master/hip/spine/chest
+        weight: 1
+      - path: Armature/master/hip/spine/chest/neck
+        weight: 1
+      - path: Armature/master/hip/spine/chest/neck/head
+        weight: 1
+      - path: Armature/master/hip/spine/chest/neck/head/head_end
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.L
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.L/upper_arm.L/forearm.L/forearm.L_end
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.R
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: Armature/master/hip/spine/chest/shoulder.R/upper_arm.R/forearm.R/forearm.R_end
+        weight: 1
+      - path: Armature/master/Kopf
+        weight: 1
+      - path: Armature/master/Kopf/Kopf_end
+        weight: 1
+      - path: Armature/master/Schwanz
+        weight: 1
+      - path: Armature/master/Schwanz/Schwanz_end
+        weight: 1
+      - path: Pferd
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

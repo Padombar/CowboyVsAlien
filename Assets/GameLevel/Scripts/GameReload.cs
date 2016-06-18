@@ -16,7 +16,6 @@ public class GameReload : MonoBehaviour
                 masterObject.transform.GetChild(i).gameObject.SetActive(true);
             }
             PlayerPrefs.SetInt("reload",0);
-            GameObject.Find("Hintergrundmusik").GetComponent<AudioSource>().Play();
             SceneManager.LoadScene("HUD",LoadSceneMode.Additive);
         }
 	}

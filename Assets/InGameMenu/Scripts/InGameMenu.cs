@@ -27,10 +27,15 @@ public class InGameMenu : MonoBehaviour {
 
 	void ToggleTimeScale () {
 		Debug.Log ("ToggleTimeScale");
-		if (!isPause) {
-			Time.timeScale = 0;
+        
+        if (!isPause) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
 		} else {
-			Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1;
 		}
 		isPause = !isPause;
 	}
