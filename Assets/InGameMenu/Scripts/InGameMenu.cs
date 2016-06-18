@@ -20,7 +20,7 @@ public class InGameMenu : MonoBehaviour {
 		
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown (PlayerPrefs.GetString ("control_menu"))) {
+		if(Input.GetKeyDown (PlayerPrefs.GetString ("control_menu")) && PlayerPrefs.GetInt("controllDeactive", 0) == 0) {
 			ToggleTimeScale();
 		}
 	}
