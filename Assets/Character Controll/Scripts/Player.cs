@@ -7,8 +7,7 @@ public class Player : MonoBehaviour {
 	Animation myanimation;
 
 	public GameObject projectile;
-
-	public MonoBehaviour InGameMenu;
+    
 
 	public float moveSpeed = 100;
     
@@ -34,6 +33,8 @@ public class Player : MonoBehaviour {
 
             mycontroller.SimpleMove (transform.forward * z * moveSpeed * Time.deltaTime);
 			mycontroller.SimpleMove (transform.right * x * moveSpeed * Time.deltaTime);
+
+
 			if ((z > 0.2) || (z < -0.2)) {
 				myanimation.CrossFade ("ActionWalking");
 			} else {
