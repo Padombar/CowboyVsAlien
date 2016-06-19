@@ -19,5 +19,6 @@ public class TestMoveScipts : MonoBehaviour
     // Update is called once per frame
     void Update ()
 	{
+        PlayerPrefs.SetInt("playerHealth", 100);
     }
 }

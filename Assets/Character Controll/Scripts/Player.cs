@@ -19,6 +19,10 @@ public class Player : MonoBehaviour {
 
 
 	void Update () {
+	    if (PlayerPrefs.GetInt("controllDeactive", 0) == 1)
+	    {
+            walkSource.enabled = false;
+        }
 
 		if (PlayerPrefs.GetInt("controllDeactive", 0) == 0) {
 

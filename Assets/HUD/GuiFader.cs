@@ -21,18 +21,16 @@ public class GuiFader : MonoBehaviour {
 
     public void FadeToClear()
     {
-        image.color = Color.Lerp(image.color, Color.clear, Time.deltaTime*10);
+        image.color = Color.Lerp(image.color, Color.clear, Time.deltaTime*1);
         if (image.color.a <= 0.05f)
         {
             image.color = Color.clear;
-            image.enabled = false;
         }
     }
 
     public void FadeToBlack()
     {
-        image.enabled = true;
-        image.color = Color.Lerp(image.color, Color.black, Time.deltaTime * 10);
+        image.color = Color.Lerp(image.color, Color.black, Time.deltaTime *2);
         if (image.color.a >= 0.95f)
         {
             image.color = Color.black;

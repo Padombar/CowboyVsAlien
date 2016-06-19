@@ -18,6 +18,12 @@ public class LaserCollisingScript : MonoBehaviour {
     {
         if (collision.collider.CompareTag("Player"))
         {
+            GameObject[] sounds = GameObject.FindGameObjectsWithTag("CowboyHitSound");
+
+            int index = Util.Random.Next(0, 2);
+
+            sounds[index].GetComponent<AudioSource>().Play();
+
             PlayerPrefs.SetInt("playerHealth",PlayerPrefs.GetInt("playerHealth",100)-10);
         }
         Destroy(gameObject);
