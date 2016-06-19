@@ -2,30 +2,27 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+	
+	public GameObject projectile;
+	public float moveSpeed = 100;
 
+	bool shooting = false;
+	AudioSource walkSource;
 	CharacterController mycontroller;
 	Animation myanimation;
 
-	public GameObject projectile;
-    
 
-	public float moveSpeed = 100;
-    
-	bool shooting = false;
-
-	// Use this for initialization
 	void Start () {
-	
+		walkSource = GetComponent<AudioSource>();
+		walkSource.enabled = false;
 	}
-	
-	// Update is called once per frame
+
+
 	void Update () {
-	
 
 		if (PlayerPrefs.GetInt("controllDeactive", 0) == 0) {
 
 			myanimation = (Animation)gameObject.GetComponent ("Animation");
-
 			mycontroller = (CharacterController)gameObject.GetComponent ("CharacterController");
 
             float z = Input.GetAxis("Vertical");
@@ -34,10 +31,11 @@ public class Player : MonoBehaviour {
             mycontroller.SimpleMove (transform.forward * z * moveSpeed * Time.deltaTime);
 			mycontroller.SimpleMove (transform.right * x * moveSpeed * Time.deltaTime);
 
-
-			if ((z > 0.2) || (z < -0.2)) {
+			if ((z > 0.2) || (z < -0.2) || (x > 0.2) || (x < -0.2)) {
+				walkSource.enabled = true;
 				myanimation.CrossFade ("ActionWalking");
 			} else {
+				walkSource.enabled = false;
 				myanimation.CrossFade ("ActionStanding");
 			}
 

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * source:
  * http://answers.unity3d.com/questions/29741/mouse-look-script.html#answer-1135843
  * 
